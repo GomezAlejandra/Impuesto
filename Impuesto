@@ -1,0 +1,33 @@
+
+Precio <- function(precio) 
+{
+  
+  # Version: 1.0 | Autor: agomezc
+  # Descripcion:
+  # Esta funcion calcula el impuesto correspondiente a pagar
+  # de acuerdo a un valor dado.
+  
+  
+  # Argumentos:
+  # precio = vector numerico 
+  
+  # Codigo:
+  
+  result1 <- precio*(5.0/100)
+  result2 <- precio*(10.0/100)
+  result3 <- precio*(15.0/100)
+  
+  
+  if (precio < 10000){
+    cat('El impuesto a pagar para :',precio,'pesos es 5%:',result1,'pesos')
+    
+  } else if (precio >= 10000 && precio<25000){
+    cat('El impuesto a pagar para :',precio,'pesos es 10%:',result2,'pesos')  
+    
+  } else {
+    cat('El impuesto a pagar para :',precio,'pesos es 15%:',result3,'pesos') 
+    
+  }
+}
+Precio(5000)
+
